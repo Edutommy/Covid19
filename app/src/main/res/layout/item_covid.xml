@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_card"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="120dp"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/item_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chile"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:id="@+id/item_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUEVOS CASOS"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/item_country"
+        />
+    <TextView
+        android:id="@+id/item_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/item_new"
+        />
+    <TextView
+        android:id="@+id/item_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CL"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:textSize="30dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        />
+
+</RelativeLayout>

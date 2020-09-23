@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp">
+
+    <TextView
+        android:id="@+id/detail_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chile"
+        android:textSize="50dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/detail_country"
+        android:background="#fff"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/detail_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUEVOS CASOS"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/detail_country"
+        />
+    <TextView
+        android:id="@+id/detail_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail_new"
+        />
+
+
+    <TextView
+        android:id="@+id/detail_tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL CONFIRMADOS"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/detail_cases"
+        />
+    <TextView
+        android:id="@+id/detail_totalConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail_tc"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_below="@id/detail_totalConfirmed"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+    android:id="@+id/detail_nd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="NUEVAS MUERTES"
+    android:textSize="30dp"
+    android:textColor="#fff"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/detail_totalConfirmed"
+    />
+    <TextView
+        android:id="@+id/detail_newDead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="#8F8181"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail_nd"
+        />
+
+    <TextView
+        android:id="@+id/detail_td"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL MUERTES"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/detail_newDead"
+        />
+    <TextView
+        android:id="@+id/detail_totalDead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="#8F8181"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail_td"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_below="@id/detail_totalDead"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/detail_nr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUEVOS RECUPERADOS"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/detail_totalDead"
+        />
+    <TextView
+        android:id="@+id/detail_newRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="#00FF0A"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail_nr"
+        />
+
+    <TextView
+        android:id="@+id/detail_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL RECUPERADOS"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/detail_newRecovered"
+        />
+    <TextView
+        android:id="@+id/detail_totalRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="#00FF0A"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail_tr"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_below="@id/detail_totalRecovered"
+        android:layout_marginTop="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/detail_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CL"
+        android:textColor="#fff"
+        android:layout_below="@id/detail_totalRecovered"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDUARDO MAUREIRA"
+        android:textColor="#fff"
+        android:layout_below="@id/detail_code"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        />
+
+</RelativeLayout>
