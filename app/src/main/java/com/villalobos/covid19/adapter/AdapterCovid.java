@@ -80,6 +80,8 @@ public class AdapterCovid extends RecyclerView.Adapter<AdapterCovid.CovidHolder>
                 @Override
                 public void onClick(View view) {
 
+
+
                     Intent intent = new Intent(activity, DetailActivity.class);
                     intent.putExtra("COUNTRY", item_country.getText().toString());
                     intent.putExtra("CODE", item_code.getText().toString());
