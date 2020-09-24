@@ -23,7 +23,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String URL="https://api.covid19api.com/";
+    private static final String URL="https://api.covid19api.com/summary";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

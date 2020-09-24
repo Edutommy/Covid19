@@ -3,6 +3,7 @@ package com.villalobos.covid19;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
@@ -21,7 +22,7 @@ public class DetailActivity extends AppCompatActivity {
         code = getIntent().getStringExtra("CODE");
         cases = getIntent().getStringExtra("CASES");
         tc = getIntent().getStringExtra("TotalConfirmed");
-        nd = getIntent().getStringExtra("NewDead");
+        nd = getIntent().getStringExtra("NEWDEAD");
         td = getIntent().getStringExtra("TotalDead");
         nr = getIntent().getStringExtra("NewRecovered");
         tr = getIntent().getStringExtra("TotalRecovered");
@@ -44,6 +45,7 @@ public class DetailActivity extends AppCompatActivity {
         txtTD.setText(td);
         txtNR.setText(nr);
         txtTR.setText(tr);
+
 
     }
 }

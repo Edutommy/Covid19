@@ -45,7 +45,7 @@ public class AdapterCovid extends RecyclerView.Adapter<AdapterCovid.CovidHolder>
         holder.item_code.setText(covid.CountryCode);
 
         //holder.item_totalRecovered.setText(covid.TotalRecovered);
-        //holder.item_totalConfirmed.setText(covid.TotalConfirmed);
+        //holder.detail_totalConfirmed.setText(covid.TotalConfirmed);<
         //holder.item_newDead.setText(covid.NewDeaths);
         //holder.item_totalDead.setText(covid.TotalDeaths);
         //holder.item_newRecovered.setText(covid.NewRecovered);
@@ -59,7 +59,7 @@ public class AdapterCovid extends RecyclerView.Adapter<AdapterCovid.CovidHolder>
 
     public class CovidHolder extends RecyclerView.ViewHolder{
 
-        TextView item_country, item_cases, item_code, item_totalConfirmed, item_newDead,
+        TextView item_country, item_cases, item_code, detail_totalConfirmed, item_newDead,
                 item_totalDead, item_newRecovered, item_totalRecovered;
         RelativeLayout item_card;
 
@@ -69,34 +69,28 @@ public class AdapterCovid extends RecyclerView.Adapter<AdapterCovid.CovidHolder>
             item_cases = itemView.findViewById(R.id.item_cases);
             item_code = itemView.findViewById(R.id.item_code);
 
-            item_totalRecovered = itemView.findViewById(R.id.detail_totalConfirmed);
-            item_newDead = itemView.findViewById(R.id.detail_newDead);
-            item_totalDead = itemView.findViewById(R.id.detail_totalDead);
-            item_newRecovered = itemView.findViewById(R.id.detail_newRecovered);
-            item_totalRecovered = itemView.findViewById(R.id.detail_totalRecovered);
+            //detail_totalConfirmed = itemView.findViewById(R.id.detail_totalConfirmed);
+            //item_newDead = itemView.findViewById(R.id.detail_newDead);
+            //item_totalDead = itemView.findViewById(R.id.detail_totalDead);
+            //item_newRecovered = itemView.findViewById(R.id.detail_newRecovered);
+            //item_totalRecovered = itemView.findViewById(R.id.detail_totalRecovered);
 
             item_card = itemView.findViewById(R.id.item_card);
             item_card.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
-                    //item_totalConfirmed.findViewById(R.id.detail_totalConfirmed);
-                    //item_newDead.findViewById(R.id.detail_newDead);
-                    //item_totalDead.findViewById(R.id.detail_totalDead);
-                    //item_newRecovered.findViewById(R.id.detail_newRecovered);
-                    //item_totalRecovered.findViewById(R.id.detail_totalRecovered);
-
-
                     Intent intent = new Intent(activity, DetailActivity.class);
                     intent.putExtra("COUNTRY", item_country.getText().toString());
                     intent.putExtra("CODE", item_code.getText().toString());
                     intent.putExtra("CASES", item_cases.getText().toString());
 
-                    intent.putExtra("TotalConfirmed", item_totalConfirmed.getText().toString());
-                    intent.putExtra("NewDead", item_newDead.getText().toString());
-                    intent.putExtra("TotalDead", item_totalDead.getText().toString());
-                    intent.putExtra("NewRecovered", item_newRecovered.getText().toString());
-                    intent.putExtra("TotalRecovered", item_totalRecovered.getText().toString());
+
+                    //intent.putExtra("TotalConfirmed", detail_totalConfirmed.getText().toString());
+                    //intent.putExtra("NEWDEAD", item_newDead.getText().toString());
+                    //intent.putExtra("TotalDead", item_totalDead.getText().toString());
+                    //intent.putExtra("NewRecovered", item_newRecovered.getText().toString());
+                    //intent.putExtra("TotalRecovered", item_totalRecovered.getText().toString());
 
                     activity.startActivity(intent);
                 }
